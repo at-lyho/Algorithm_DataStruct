@@ -10,7 +10,6 @@ import java.util.Arrays;
  */
 public class Bubbule {
 	private int[] mList = new int[] { 3, 2, 4, 5, 1 };
-
 	public void sort() {
 		int steps = mList.length - 1;
 		for (int i = 0; i < steps; i++) {
