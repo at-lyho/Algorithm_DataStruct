@@ -27,10 +27,14 @@ import java.util.Arrays;
  * 
  *         Ưu điểm: Trong trường hợp xấu nhất, nhanh hơn quitsort, không dùng đệ
  *         quy nếu mảng đã được sắp xếp một phần, heap sort nhanh hơn quitsort
- * 
+ *         
+ *         Node gốc ở chỉ số 0 
+ *         Node cha của node i có chỉ số (i – 1)/2 
+ *         Node con của node i (nếu có) có chỉ số [2i + 1] và [2i + 2]
+ *         Node cuối cùng có con trong 1 Heap có n phần tử là: [n/2 – 1]
  */
 public class Heap {
-	private int[] mList = new int[] { 3, 2, 4, 5, 1, 10, -1, 7, 6 };
+	private int[] mList = new int[] { 3, 2, 4, 5, 1, 10, -1, 7, 6, 123, 21, 12, 4, 12 };
 
 	/**
 	 * Phẩn tử lớn nhất ở đỉnh heap cho vào cuối mảng đồng thời trừ đi một node và
